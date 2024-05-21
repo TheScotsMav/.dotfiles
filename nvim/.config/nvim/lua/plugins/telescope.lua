@@ -17,11 +17,17 @@ return {
       require("telescope").load_extension("ui-select")
     end,
     keys = {
-      { "<leader>ff",       require("telescope.builtin").find_files, desc = "" },
-      { "<C-p>",            require("telescope.builtin").git_files,  desc = "" },
-      { "<leader>fg",       require("telescope.builtin").live_grep,  desc = "" },
-      { "<leader><leader>", require("telescope.builtin").oldfiles,   desc = "" },
-      { "<leader>vh",       require("telescope.builtin").help_tags,  desc = "" },
+      {
+        "<leader>ff",
+        function()
+          require("telescope.builtin").find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})
+        end,
+        desc = "",
+      },
+      { "<C-p>",            require("telescope.builtin").git_files, desc = "" },
+      { "<leader>fg",       require("telescope.builtin").live_grep, desc = "" },
+      { "<leader><leader>", require("telescope.builtin").oldfiles,  desc = "" },
+      { "<leader>vh",       require("telescope.builtin").help_tags, desc = "" },
       {
         "<leader>ps",
         function()
