@@ -2,6 +2,5 @@
 
 for folder in `ls -d */`;
 do
-    stow -D $folder
-    stow $folder
+    ( stow --restow $folder )
 done
