@@ -1,6 +1,9 @@
 env:
   TERM: xterm-256color
 
+window:
+  decorations: None
+
 font:
   size: 14
   normal:
