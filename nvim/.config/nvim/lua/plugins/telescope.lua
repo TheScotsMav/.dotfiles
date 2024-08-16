@@ -29,6 +29,7 @@ return {
       { "<leader><leader>", require("telescope.builtin").oldfiles,  desc = "" },
       { "<leader>vh",       require("telescope.builtin").help_tags, desc = "" },
       { "<leader>gr",       require("telescope.builtin").lsp_references, desc = "" },
+      { "<leader>gd",       require("telescope.builtin").lsp_definition, desc = "" },
       {
         "<leader>ps",
         function()
