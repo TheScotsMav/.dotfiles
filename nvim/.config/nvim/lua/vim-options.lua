@@ -9,10 +9,3 @@ vim.opt.swapfile = false
 
 vim.wo.relativenumber = true
 vim.wo.number = true
-
-vim.keymap.set({"", "!"}, "<Right>", "", {})
-vim.keymap.set({"", "!"}, "<Left>", "", {})
-vim.keymap.set({"", "!"}, "<Up>", "", {})
-vim.keymap.set({"", "!"}, "<Down>", "", {})
-
-vim.opt.mouse = ""

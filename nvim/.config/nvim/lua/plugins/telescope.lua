@@ -28,6 +28,7 @@ return {
       { "<leader>fg",       require("telescope.builtin").live_grep, desc = "" },
       { "<leader><leader>", require("telescope.builtin").oldfiles,  desc = "" },
       { "<leader>vh",       require("telescope.builtin").help_tags, desc = "" },
+      { "<leader>gr",       require("telescope.builtin").lsp_references, desc = "" },
       {
         "<leader>ps",
         function()
