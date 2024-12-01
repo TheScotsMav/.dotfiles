@@ -8,15 +8,7 @@ vim.g.background = "light"
 vim.opt.swapfile = false
 
 vim.wo.relativenumber = true
-<<<<<<< HEAD
 vim.wo.number = true
-
-vim.keymap.set({"", "!"}, "<Right>", "", {})
-vim.keymap.set({"", "!"}, "<Left>", "", {})
-vim.keymap.set({"", "!"}, "<Up>", "", {})
-vim.keymap.set({"", "!"}, "<Down>", "", {})
 
 vim.opt.mouse = ""
-=======
 vim.wo.number = true
->>>>>>> 8db6f3624eebf1d7fb9078e6c52ef0207574e1dc
